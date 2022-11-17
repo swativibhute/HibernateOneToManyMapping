@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="Hibernate.connection.driver_Class">com.mysql.cj.jdbc.driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/onetomany</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">MySqlroot@12</property>
+		<property name="hibernate.Dialect">org.hibernate.Dialect.MySQL8Dialect</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+		<mapping class="com.demo.Customer"></mapping>
+		<mapping class="com.demo.OrderDetail"></mapping>
+
+
+
+
+
+	</session-factory>
+
+
+
+
+</hibernate-configuration>
